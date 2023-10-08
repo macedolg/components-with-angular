@@ -1,0 +1,6 @@
+<p>Olá, meu componente aqui!</p>
+<li *ngFor="let product of productList$ | async">
+  {{ product.strDrink }}
+</li>
+<app-second-component [myProp]="teste" (newItemEvent)="handleEvent($event)"></app-second-component>
+<!-- <button (click)="onClick()">filtro</button> -->
